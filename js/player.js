@@ -91,11 +91,6 @@ let shortcutHintTimeout = null; // 用于控制快捷键提示显示时间
 let adFilteringEnabled = true; // 默认开启广告过滤
 let progressSaveInterval = null; // 定期保存进度的计时器
 let currentVideoUrl = ''; // 记录当前实际的视频URL
-let skipIntroDuration = 90; // 默认跳过90秒片头
-let skipEndingDuration = 90; // 默认跳过90秒片尾
-let skipEnabled = true; // 是否启用跳过功能
-let skipIntroButton = null; // 跳过片头按钮实例
-let skipEndingButton = null; // 跳过片尾按钮实例
 const isWebkit = (typeof window.webkitConvertPointFromNodeToPage === 'function')
 Artplayer.FULLSCREEN_WEB_IN_BODY = true;
 
@@ -1795,3 +1790,4 @@ async function switchToResource(sourceKey, vodId) {
     } finally {
         hideLoading();
     }
+}
